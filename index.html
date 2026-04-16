@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Franco Yepez - Biografía</title>
+    <style>
+      /* Estilos base para imitar la imagen */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #000; /* Fondo exterior negro */
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        padding: 40px 20px;
+      }
+
+      .main-container {
+        width: 100%;
+        max-width: 900px;
+        background-color: #cbd5e0; /* Fondo gris claro del contenedor */
+        padding: 30px;
+        border-radius: 8px;
+      }
+
+      /* Banner Superior (Naranja) */
+      .header-banner {
+        background-color: #f6ad55;
+        text-align: center;
+        padding: 25px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #000;
+      }
+
+      /* Barra de Navegación (Verde) */
+      .navbar {
+        background-color: #68d391;
+        padding: 15px;
+        text-align: center;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #000;
+      }
+
+      .navbar a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        margin: 0 10px;
+        font-size: 0.9em;
+      }
+
+      /* Contenedor de dos columnas */
+      .content-wrapper {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+
+      /* Sección Principal (Gris Oscuro) */
+      .main-info {
+        flex: 2;
+        background-color: #718096;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+        border: 1px solid #000;
+      }
+
+      /* Tarjetas de información (Verde Manzana) */
+      .info-card {
+        background-color: #9ae6b4;
+        margin: 15px 0;
+        padding: 15px;
+        border-radius: 15px;
+        border: 1px solid #4a5568;
+        text-align: left;
+      }
+
+      .info-card h3 {
+        margin-top: 0;
+        text-align: center;
+      }
+
+      /* Columna Lateral (Azul) */
+      .side-info {
+        flex: 1;
+        background-color: #63b3ed;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+        border: 1px solid #000;
+      }
+
+      /* Estilo para la tabla y formulario */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        margin-top: 10px;
+      }
+      .search-box input,
+      .search-box button {
+        width: 90%;
+        padding: 8px;
+        margin: 5px 0;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+      }
+      .search-box button {
+        background-color: #4299e1;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      /* Banner Inferior (Naranja) */
+      .footer-banner {
+        background-color: #f6ad55;
+        text-align: center;
+        padding: 20px;
+        border-radius: 20px;
+        border: 1px solid #000;
+        font-size: 0.9em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header-banner">
+        <h1>Franco Yepez Vargas</h1>
+        <p>Persona tranquila y normal - Estudiante de Ing. Sistemas</p>
+      </header>
+
+      <nav class="navbar">
+        <a href="#introduccion">Introducción</a>
+        <a href="#educacion">Educación</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="content-wrapper">
+        <main class="main-info">
+          <h2>Información Principal</h2>
+
+          <section id="introduccion" class="info-card">
+            <h3>Sobre mí</h3>
+            <p>
+              Nací en Ica, tengo 27 años. Me gusta dormir, comer rico y viajar.
+              Actualmente mi meta es terminar mi carrera.
+            </p>
+          </section>
+
+          <section id="educacion" class="info-card">
+            <h3>Trayectoria Educativa</h3>
+            <table border="1">
+              <tr>
+                <td>2010-2015</td>
+                <td>Galileo (Secundaria)</td>
+              </tr>
+              <tr>
+                <td>Actual</td>
+                <td>UTEA (Ing. Sistemas)</td>
+              </tr>
+            </table>
+          </section>
+
+          <section id="proyectos" class="info-card">
+            <h3>Actividades</h3>
+            <p>
+              Actualmente trabajando y estudiando. Me gusta salir con mis amigos
+              y caminar.
+            </p>
+          </section>
+        </main>
+
+        <aside class="side-info">
+          <h2>Información adicional</h2>
+          <div class="search-box">
+            <p><strong>Mis Redes:</strong></p>
+            <a href="https://github.com/galleton">GitHub: galleton</a
+            ><br /><br />
+            <label>Buscar en el sitio:</label>
+            <input type="text" placeholder="Escribe aquí..." />
+            <button>Buscar</button>
+          </div>
+
+          <div style="margin-top: 20px; text-align: left; font-size: 0.8em">
+            <p>📧 202313001i@utea.edu.pe</p>
+            <p>📍 Nací en Ica (1998)</p>
+          </div>
+        </aside>
+      </div>
+
+      <footer class="footer-banner">
+        <p>Universidad Tecnológica de los Andes</p>
+        <p>Escuela Profesional de Ingeniería de Sistemas</p>
+        <p>© 2026 - Franco Yepez Vargas</p>
+      </footer>
+    </div>
+  </body>
+</html>
